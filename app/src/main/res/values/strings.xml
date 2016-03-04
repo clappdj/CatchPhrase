@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Catchphrase</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="words_here">Words Here</string>
+    <string name="new_word_text">New Word</string>
+    <string name="start_game_text">Hit the Button</string>
+    <string name="red_text">Red</string>
+    <string name="blue_text">Blue</string>
+    <string name="no_point_text">0</string>
+    <string name="title_activity_main_menu">MainMenu</string>
+    <string name="title_text">Catch Phrase</string>
+    <string name="start_game">Start</string>
+    <string name="title_activity_word_list_select">WordListSelect</string>
+    <string name="word_select_text">Select a Word List</string>
+    <string name="dirty_button_text">Dirty List</string>
+    <string name="standard_button_text">Standard List</string>
+</resources>

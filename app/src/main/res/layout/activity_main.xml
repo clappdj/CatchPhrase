@@ -1,0 +1,90 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:id="@+id/layout">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/start_game_text"
+        android:id="@+id/selected_word"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/switch_word"
+        android:layout_toStartOf="@+id/switch_word"
+        android:layout_marginRight="44dp"
+        android:layout_marginEnd="44dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/new_word_text"
+        android:id="@+id/switch_word"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="newWordClick"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/blue_text"
+        android:id="@+id/blue_point"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="pointClick"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/red_text"
+        android:id="@+id/red_point"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/blue_point"
+        android:layout_toStartOf="@+id/blue_point"
+        android:onClick="pointClick"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/no_point_text"
+        android:id="@+id/blue_point_total"
+        android:layout_alignRight="@+id/blue_point"
+        android:layout_alignEnd="@+id/blue_point"
+        android:layout_alignBottom="@+id/selected_word"
+        android:layout_alignTop="@+id/selected_word" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/no_point_text"
+        android:id="@+id/red_point_total"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/blue_point"
+        android:layout_toStartOf="@+id/blue_point"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TIMER"
+        android:id="@+id/timer"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/selected_word"
+        android:layout_alignEnd="@+id/selected_word"
+        android:textIsSelectable="true"
+        android:textSize="32sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NULL"
+        android:id="@+id/vibrateTimingCheck"
+        android:layout_alignTop="@+id/red_point"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
